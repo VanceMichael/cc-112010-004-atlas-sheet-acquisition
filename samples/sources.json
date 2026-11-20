@@ -1,0 +1,1408 @@
+{
+  "rounds": [
+    [
+      {
+        "path": "/jobs",
+        "body": [
+          {
+            "job": "P-7",
+            "windows": [
+              {
+                "id": "L",
+                "extent": [
+                  10,
+                  10,
+                  115,
+                  95
+                ],
+                "bleed": 5,
+                "theme": "water",
+                "edition": "w1"
+              },
+              {
+                "id": "R",
+                "extent": [
+                  90,
+                  25,
+                  184,
+                  95
+                ],
+                "bleed": 5,
+                "theme": "soil",
+                "edition": "s1"
+              }
+            ],
+            "base": "b1"
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/editions",
+        "body": {
+          "matrices": [
+            {
+              "id": "W",
+              "crs": "LOCAL:M",
+              "origin": [
+                0,
+                100
+              ],
+              "step": [
+                50,
+                50
+              ],
+              "size": [
+                3,
+                2
+              ],
+              "area": [
+                0,
+                0,
+                135,
+                100
+              ],
+              "priority": 2
+            },
+            {
+              "id": "E",
+              "crs": "LOCAL:M",
+              "origin": [
+                80,
+                110
+              ],
+              "step": [
+                60,
+                55
+              ],
+              "size": [
+                2,
+                2
+              ],
+              "area": [
+                100,
+                0,
+                200,
+                110
+              ],
+              "priority": 1
+            }
+          ],
+          "editions": [
+            {
+              "id": "b1",
+              "index": "/tiles/b1/catalog",
+              "area": [
+                0,
+                0,
+                200,
+                110
+              ]
+            },
+            {
+              "id": "w1",
+              "index": "/tiles/w1/catalog",
+              "compatibleBase": [
+                "b1"
+              ],
+              "area": [
+                0,
+                0,
+                125,
+                100
+              ],
+              "blank": [
+                [
+                  0,
+                  0,
+                  10,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "s1",
+              "index": "/tiles/s1/catalog",
+              "compatibleBase": [
+                "b1"
+              ],
+              "area": [
+                70,
+                0,
+                200,
+                110
+              ]
+            }
+          ]
+        },
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/proofs",
+        "body": [],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/tiles/b1/catalog",
+        "body": [
+          {
+            "edition": "b1",
+            "matrix": "W",
+            "row": 0,
+            "col": 0,
+            "area": [
+              0,
+              50,
+              50,
+              100
+            ],
+            "uri": "/tiles/b1/W/0/0.png",
+            "sha256": "95630d8373d5aa976f857c471877530480df55e0eb6d02409596a301e5bb20e8"
+          },
+          {
+            "edition": "b1",
+            "matrix": "W",
+            "row": 0,
+            "col": 1,
+            "area": [
+              50,
+              50,
+              100,
+              100
+            ],
+            "uri": "/tiles/b1/W/0/1.png",
+            "sha256": "f98f393dc39282b40ba821bec27556164cb82494c57b8cbaed42713ab7c51982"
+          },
+          {
+            "edition": "b1",
+            "matrix": "W",
+            "row": 0,
+            "col": 2,
+            "area": [
+              100,
+              50,
+              150,
+              100
+            ],
+            "uri": "/tiles/b1/W/0/2.png",
+            "sha256": "5a5a2c05fcac8d77128ce4fcc3f6d2d6452c0c355c103874738a2268b5555379"
+          },
+          {
+            "edition": "b1",
+            "matrix": "W",
+            "row": 1,
+            "col": 0,
+            "area": [
+              0,
+              0,
+              50,
+              50
+            ],
+            "uri": "/tiles/b1/W/1/0.png",
+            "sha256": "14a4be5f8d95dfe0b186c554ee3d9f53b109fbead89c924488c2d67934ea29a7"
+          },
+          {
+            "edition": "b1",
+            "matrix": "W",
+            "row": 1,
+            "col": 1,
+            "area": [
+              50,
+              0,
+              100,
+              50
+            ],
+            "uri": "/tiles/b1/W/1/1.png",
+            "sha256": "047f14c5909eb690ae3727f154d6effa838811b2e23d469eac22abd4984f1745"
+          },
+          {
+            "edition": "b1",
+            "matrix": "W",
+            "row": 1,
+            "col": 2,
+            "area": [
+              100,
+              0,
+              150,
+              50
+            ],
+            "uri": "/tiles/b1/W/1/2.png",
+            "sha256": "bdc3631408bea3e8449b3435ae629cc3065cc4d1db8ff6f635743c7699d88e75"
+          },
+          {
+            "edition": "b1",
+            "matrix": "E",
+            "row": 0,
+            "col": 0,
+            "area": [
+              80,
+              55,
+              140,
+              110
+            ],
+            "uri": "/tiles/b1/E/0/0.png",
+            "sha256": "fff5f579006b478b39ce4c90037a66be87c776451c183648000603600cbd6a13"
+          },
+          {
+            "edition": "b1",
+            "matrix": "E",
+            "row": 0,
+            "col": 1,
+            "area": [
+              140,
+              55,
+              200,
+              110
+            ],
+            "uri": "/tiles/b1/E/0/1.png",
+            "sha256": "206f823b010957b747850e6555d4af79fe2598b13b6c84094362ced6b6020ac0"
+          },
+          {
+            "edition": "b1",
+            "matrix": "E",
+            "row": 1,
+            "col": 0,
+            "area": [
+              80,
+              0,
+              140,
+              55
+            ],
+            "uri": "/tiles/b1/E/1/0.png",
+            "sha256": "9eca6db763ee45741b5c2c1976416ea6299e4d10042621b47b97289c0eb1e9ca"
+          },
+          {
+            "edition": "b1",
+            "matrix": "E",
+            "row": 1,
+            "col": 1,
+            "area": [
+              140,
+              0,
+              200,
+              55
+            ],
+            "uri": "/tiles/b1/E/1/1.png",
+            "sha256": "454f78b2f30ce40881a68a7497d87e7fb299bf278d1f061f18fbda41d8558ae4"
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/tiles/w1/catalog",
+        "body": [
+          {
+            "edition": "w1",
+            "matrix": "W",
+            "row": 0,
+            "col": 0,
+            "area": [
+              0,
+              50,
+              50,
+              100
+            ],
+            "uri": "/tiles/w1/W/0/0.png",
+            "sha256": "abf42af2b64cc9c20d7fa182e6c0da63da59f57a763909a7868a7fa8d7e57f35"
+          },
+          {
+            "edition": "w1",
+            "matrix": "W",
+            "row": 0,
+            "col": 1,
+            "area": [
+              50,
+              50,
+              100,
+              100
+            ],
+            "uri": "/tiles/w1/W/0/1.png",
+            "sha256": "a3ec93d897b52a001fc38d4c667248258a9abe8213e524c8609f2a2adb45687b"
+          },
+          {
+            "edition": "w1",
+            "matrix": "W",
+            "row": 0,
+            "col": 2,
+            "area": [
+              100,
+              50,
+              150,
+              100
+            ],
+            "uri": "/tiles/w1/W/0/2.png",
+            "sha256": "d341e68c7508b66612755bdbdd2c35d592c056faa4d1ab99ca0b0d54ad32a8f1"
+          },
+          {
+            "edition": "w1",
+            "matrix": "W",
+            "row": 1,
+            "col": 0,
+            "area": [
+              0,
+              0,
+              50,
+              50
+            ],
+            "uri": "/tiles/w1/W/1/0.png",
+            "sha256": "933c400539dbd5bf892a786f7a11d4ad94408d0f0372b79949ed3daedd706571"
+          },
+          {
+            "edition": "w1",
+            "matrix": "W",
+            "row": 1,
+            "col": 1,
+            "area": [
+              50,
+              0,
+              100,
+              50
+            ],
+            "uri": "/tiles/w1/W/1/1.png",
+            "sha256": "74c5211225375834bde66fc5b04e84d71f008ed89904180acf1dcfa4645d2acf"
+          },
+          {
+            "edition": "w1",
+            "matrix": "W",
+            "row": 1,
+            "col": 2,
+            "area": [
+              100,
+              0,
+              150,
+              50
+            ],
+            "uri": "/tiles/w1/W/1/2.png",
+            "sha256": "c328983c9cc61333b064f5b9806d1860ba45fa9f5d21358620506b2ce493f4f1"
+          },
+          {
+            "edition": "w1",
+            "matrix": "E",
+            "row": 0,
+            "col": 0,
+            "area": [
+              80,
+              55,
+              140,
+              110
+            ],
+            "uri": "/tiles/w1/E/0/0.png",
+            "sha256": "86045d23bfaec8314002225c1fb5a905078a73216c091a3d841d6e0a880cb8fd"
+          },
+          {
+            "edition": "w1",
+            "matrix": "E",
+            "row": 0,
+            "col": 1,
+            "area": [
+              140,
+              55,
+              200,
+              110
+            ],
+            "uri": "/tiles/w1/E/0/1.png",
+            "sha256": "0404572f0d6d842acac9f853b1f803255e26c54153782e28a1ba7d968cf5138f"
+          },
+          {
+            "edition": "w1",
+            "matrix": "E",
+            "row": 1,
+            "col": 0,
+            "area": [
+              80,
+              0,
+              140,
+              55
+            ],
+            "uri": "/tiles/w1/E/1/0.png",
+            "sha256": "d976ade7d80ed3d0965476aa172149d0b00a193299f6f9ecac2bb72c7e1ae088"
+          },
+          {
+            "edition": "w1",
+            "matrix": "E",
+            "row": 1,
+            "col": 1,
+            "area": [
+              140,
+              0,
+              200,
+              55
+            ],
+            "uri": "/tiles/w1/E/1/1.png",
+            "sha256": "0d7f71b76c9bd05d00c8635347450b5c21d0f7f3943968f20e752b8d0e1c3741"
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/tiles/s1/catalog",
+        "body": [
+          {
+            "edition": "s1",
+            "matrix": "W",
+            "row": 0,
+            "col": 0,
+            "area": [
+              0,
+              50,
+              50,
+              100
+            ],
+            "uri": "/tiles/s1/W/0/0.png",
+            "sha256": "2117c791736caa84f5345ed301740c34c39a870f58434f1a8e0fe7440b65afbd"
+          },
+          {
+            "edition": "s1",
+            "matrix": "W",
+            "row": 0,
+            "col": 1,
+            "area": [
+              50,
+              50,
+              100,
+              100
+            ],
+            "uri": "/tiles/s1/W/0/1.png",
+            "sha256": "d8c8436bc0573ee907b5f2786ab6bde2ddcacb851c0ca187d13b7d42214958ff"
+          },
+          {
+            "edition": "s1",
+            "matrix": "W",
+            "row": 0,
+            "col": 2,
+            "area": [
+              100,
+              50,
+              150,
+              100
+            ],
+            "uri": "/tiles/s1/W/0/2.png",
+            "sha256": "513f19342ca6943c55b997a50b9b687e4ca598a61a3001a63237b0efd55210fe"
+          },
+          {
+            "edition": "s1",
+            "matrix": "W",
+            "row": 1,
+            "col": 0,
+            "area": [
+              0,
+              0,
+              50,
+              50
+            ],
+            "uri": "/tiles/s1/W/1/0.png",
+            "sha256": "d612d61032ada3127029c110513945ae44e0fe431be3f73ae0e78c9fcc3eea9c"
+          },
+          {
+            "edition": "s1",
+            "matrix": "W",
+            "row": 1,
+            "col": 1,
+            "area": [
+              50,
+              0,
+              100,
+              50
+            ],
+            "uri": "/tiles/s1/W/1/1.png",
+            "sha256": "947b16c3ac419e9bc6fbbe5241336d9893f46ec89ae8bcf7ace70cc431f0c422"
+          },
+          {
+            "edition": "s1",
+            "matrix": "W",
+            "row": 1,
+            "col": 2,
+            "area": [
+              100,
+              0,
+              150,
+              50
+            ],
+            "uri": "/tiles/s1/W/1/2.png",
+            "sha256": "7397b904db450ea163634c86ea65934749ac5f01fa2f01920d273d39eca24c2d"
+          },
+          {
+            "edition": "s1",
+            "matrix": "E",
+            "row": 0,
+            "col": 0,
+            "area": [
+              80,
+              55,
+              140,
+              110
+            ],
+            "uri": "/tiles/s1/E/0/0.png",
+            "sha256": "a335a5ea3f5ae4d5bca203ab6ffa3320cf0a9db0c046233892d97a609fe2e023"
+          },
+          {
+            "edition": "s1",
+            "matrix": "E",
+            "row": 0,
+            "col": 1,
+            "area": [
+              140,
+              55,
+              200,
+              110
+            ],
+            "uri": "/tiles/s1/E/0/1.png",
+            "sha256": "a329961ff39b3170e4829a32b569b0696954ecffecf68e7262553ece29eb3bce"
+          },
+          {
+            "edition": "s1",
+            "matrix": "E",
+            "row": 1,
+            "col": 0,
+            "area": [
+              80,
+              0,
+              140,
+              55
+            ],
+            "uri": "/tiles/s1/E/1/0.png",
+            "sha256": "d299b211bda07e5176c207a4dd31e4f26cb19939a6b46d083372f97ac22905ab"
+          },
+          {
+            "edition": "s1",
+            "matrix": "E",
+            "row": 1,
+            "col": 1,
+            "area": [
+              140,
+              0,
+              200,
+              55
+            ],
+            "uri": "/tiles/s1/E/1/1.png",
+            "sha256": "b718792b19d16d5a5118a1dedd1948232e72d784a3f3324c0bbbc596de4ef653"
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      }
+    ],
+    [
+      {
+        "path": "/jobs",
+        "body": [
+          {
+            "job": "P-7",
+            "windows": [
+              {
+                "id": "L",
+                "extent": [
+                  10,
+                  10,
+                  117,
+                  95
+                ],
+                "bleed": 8,
+                "theme": "water",
+                "edition": "w2"
+              },
+              {
+                "id": "R",
+                "extent": [
+                  90,
+                  25,
+                  184,
+                  95
+                ],
+                "bleed": 5,
+                "theme": "soil",
+                "edition": "s1"
+              }
+            ],
+            "base": "b1",
+            "change": "L"
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/editions",
+        "body": {
+          "patch": [
+            {
+              "id": "w2",
+              "index": "/tiles/w2/catalog",
+              "compatibleBase": [
+                "b2"
+              ],
+              "area": [
+                0,
+                0,
+                128,
+                100
+              ],
+              "changeArea": [
+                103,
+                0,
+                132,
+                100
+              ]
+            },
+            {
+              "id": "b2",
+              "index": "/tiles/b2/catalog",
+              "area": [
+                0,
+                0,
+                200,
+                110
+              ],
+              "changeArea": [
+                103,
+                0,
+                143,
+                110
+              ]
+            },
+            {
+              "id": "s2",
+              "index": "/tiles/s2/catalog",
+              "compatibleBase": [
+                "b1",
+                "b2"
+              ],
+              "area": [
+                70,
+                0,
+                200,
+                110
+              ]
+            }
+          ]
+        },
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/proofs",
+        "body": [
+          {
+            "id": "proof-P7-1",
+            "job": "P-7",
+            "windows": [
+              "L",
+              "R"
+            ],
+            "editions": [
+              "b1",
+              "w1",
+              "s1"
+            ]
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/tiles/w2/catalog",
+        "body": [
+          {
+            "edition": "w2",
+            "matrix": "W",
+            "row": 0,
+            "col": 0,
+            "area": [
+              0,
+              50,
+              50,
+              100
+            ],
+            "inherits": "/tiles/w1/W/0/0.png",
+            "sha256": "abf42af2b64cc9c20d7fa182e6c0da63da59f57a763909a7868a7fa8d7e57f35"
+          },
+          {
+            "edition": "w2",
+            "matrix": "W",
+            "row": 0,
+            "col": 1,
+            "area": [
+              50,
+              50,
+              100,
+              100
+            ],
+            "inherits": "/tiles/w1/W/0/1.png",
+            "sha256": "a3ec93d897b52a001fc38d4c667248258a9abe8213e524c8609f2a2adb45687b"
+          },
+          {
+            "edition": "w2",
+            "matrix": "W",
+            "row": 0,
+            "col": 2,
+            "area": [
+              100,
+              50,
+              150,
+              100
+            ],
+            "uri": "/tiles/w2/W/0/2.png",
+            "sha256": "e0b92f0a14a7a2ccfaca7713ac6c26a4eae8f546fa2cc346d990a4cf7b4c6bfe"
+          },
+          {
+            "edition": "w2",
+            "matrix": "W",
+            "row": 1,
+            "col": 0,
+            "area": [
+              0,
+              0,
+              50,
+              50
+            ],
+            "inherits": "/tiles/w1/W/1/0.png",
+            "sha256": "933c400539dbd5bf892a786f7a11d4ad94408d0f0372b79949ed3daedd706571"
+          },
+          {
+            "edition": "w2",
+            "matrix": "W",
+            "row": 1,
+            "col": 1,
+            "area": [
+              50,
+              0,
+              100,
+              50
+            ],
+            "inherits": "/tiles/w1/W/1/1.png",
+            "sha256": "74c5211225375834bde66fc5b04e84d71f008ed89904180acf1dcfa4645d2acf"
+          },
+          {
+            "edition": "w2",
+            "matrix": "E",
+            "row": 0,
+            "col": 0,
+            "area": [
+              80,
+              55,
+              140,
+              110
+            ],
+            "uri": "/tiles/w2/E/0/0.png",
+            "sha256": "8ba1547d1816a425d94b6afea76190315ee2113e422d86853a6b6cb28134a49e"
+          },
+          {
+            "edition": "w2",
+            "matrix": "E",
+            "row": 0,
+            "col": 1,
+            "area": [
+              140,
+              55,
+              200,
+              110
+            ],
+            "uri": "/tiles/w2/E/0/1.png",
+            "sha256": "2e58b63297107a8c74dc4766bae6fd54e930548f8546ff1c24fb2ddde2537bf0"
+          },
+          {
+            "edition": "w2",
+            "matrix": "E",
+            "row": 1,
+            "col": 0,
+            "area": [
+              80,
+              0,
+              140,
+              55
+            ],
+            "uri": "/tiles/w2/E/1/0.png",
+            "sha256": "6b9a5a9760d38f939f43b4a3c4ee6de8f9236939faca65a7f29f1c739a342745"
+          },
+          {
+            "edition": "w2",
+            "matrix": "E",
+            "row": 1,
+            "col": 1,
+            "area": [
+              140,
+              0,
+              200,
+              55
+            ],
+            "uri": "/tiles/w2/E/1/1.png",
+            "sha256": "40a0fcfc6ce56aa39a6b77d0fe54d67030198da2e2415a01a759b3c80c592c4e"
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/tiles/b2/catalog",
+        "body": [
+          {
+            "edition": "b2",
+            "matrix": "W",
+            "row": 0,
+            "col": 0,
+            "area": [
+              0,
+              50,
+              50,
+              100
+            ],
+            "inherits": "/tiles/b1/W/0/0.png",
+            "sha256": "95630d8373d5aa976f857c471877530480df55e0eb6d02409596a301e5bb20e8"
+          },
+          {
+            "edition": "b2",
+            "matrix": "W",
+            "row": 0,
+            "col": 1,
+            "area": [
+              50,
+              50,
+              100,
+              100
+            ],
+            "inherits": "/tiles/b1/W/0/1.png",
+            "sha256": "f98f393dc39282b40ba821bec27556164cb82494c57b8cbaed42713ab7c51982"
+          },
+          {
+            "edition": "b2",
+            "matrix": "W",
+            "row": 0,
+            "col": 2,
+            "area": [
+              100,
+              50,
+              150,
+              100
+            ],
+            "uri": "/tiles/b2/W/0/2.png",
+            "sha256": "c0d81a2d15b97b1153d7282a00e230f6bb47db5e8a3840e0369179503ae4c1a3"
+          },
+          {
+            "edition": "b2",
+            "matrix": "W",
+            "row": 1,
+            "col": 0,
+            "area": [
+              0,
+              0,
+              50,
+              50
+            ],
+            "inherits": "/tiles/b1/W/1/0.png",
+            "sha256": "14a4be5f8d95dfe0b186c554ee3d9f53b109fbead89c924488c2d67934ea29a7"
+          },
+          {
+            "edition": "b2",
+            "matrix": "W",
+            "row": 1,
+            "col": 1,
+            "area": [
+              50,
+              0,
+              100,
+              50
+            ],
+            "inherits": "/tiles/b1/W/1/1.png",
+            "sha256": "047f14c5909eb690ae3727f154d6effa838811b2e23d469eac22abd4984f1745"
+          },
+          {
+            "edition": "b2",
+            "matrix": "W",
+            "row": 1,
+            "col": 2,
+            "area": [
+              100,
+              0,
+              150,
+              50
+            ],
+            "uri": "/tiles/b2/W/1/2.png",
+            "sha256": "6e8b245d672d0dc27df2d54da498318ea93f3a63d60d931c25c8353b8c2610b9"
+          },
+          {
+            "edition": "b2",
+            "matrix": "E",
+            "row": 0,
+            "col": 0,
+            "area": [
+              80,
+              55,
+              140,
+              110
+            ],
+            "uri": "/tiles/b2/E/0/0.png",
+            "sha256": "23a7e476fd1fb3d8c80d2a52ef61d80b9c7942a3643f054119d15dfe10649227"
+          },
+          {
+            "edition": "b2",
+            "matrix": "E",
+            "row": 0,
+            "col": 1,
+            "area": [
+              140,
+              55,
+              200,
+              110
+            ],
+            "uri": "/tiles/b2/E/0/1.png",
+            "sha256": "22ebe2b60eab96f788be5de470a6380eb60a7ff8f52e536a100600ff64d8c418"
+          },
+          {
+            "edition": "b2",
+            "matrix": "E",
+            "row": 1,
+            "col": 0,
+            "area": [
+              80,
+              0,
+              140,
+              55
+            ],
+            "uri": "/tiles/b2/E/1/0.png",
+            "sha256": "1f8abfd180e3739ee639e11e3769c97f90467a5f912d9d7f9c36e3f720dfb1ee"
+          },
+          {
+            "edition": "b2",
+            "matrix": "E",
+            "row": 1,
+            "col": 1,
+            "area": [
+              140,
+              0,
+              200,
+              55
+            ],
+            "uri": "/tiles/b2/E/1/1.png",
+            "sha256": "870b44387869b11539d8a4d6762573ad37efe83a7afa960469000c6d90e1b3bb"
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "path": "/tiles/s2/catalog",
+        "body": [
+          {
+            "edition": "s2",
+            "matrix": "W",
+            "row": 0,
+            "col": 0,
+            "area": [
+              0,
+              50,
+              50,
+              100
+            ],
+            "inherits": "/tiles/s1/W/0/0.png",
+            "sha256": "2117c791736caa84f5345ed301740c34c39a870f58434f1a8e0fe7440b65afbd"
+          },
+          {
+            "edition": "s2",
+            "matrix": "W",
+            "row": 0,
+            "col": 1,
+            "area": [
+              50,
+              50,
+              100,
+              100
+            ],
+            "inherits": "/tiles/s1/W/0/1.png",
+            "sha256": "d8c8436bc0573ee907b5f2786ab6bde2ddcacb851c0ca187d13b7d42214958ff"
+          },
+          {
+            "edition": "s2",
+            "matrix": "W",
+            "row": 0,
+            "col": 2,
+            "area": [
+              100,
+              50,
+              150,
+              100
+            ],
+            "inherits": "/tiles/s1/W/0/2.png",
+            "sha256": "513f19342ca6943c55b997a50b9b687e4ca598a61a3001a63237b0efd55210fe"
+          },
+          {
+            "edition": "s2",
+            "matrix": "W",
+            "row": 1,
+            "col": 0,
+            "area": [
+              0,
+              0,
+              50,
+              50
+            ],
+            "inherits": "/tiles/s1/W/1/0.png",
+            "sha256": "d612d61032ada3127029c110513945ae44e0fe431be3f73ae0e78c9fcc3eea9c"
+          },
+          {
+            "edition": "s2",
+            "matrix": "W",
+            "row": 1,
+            "col": 1,
+            "area": [
+              50,
+              0,
+              100,
+              50
+            ],
+            "inherits": "/tiles/s1/W/1/1.png",
+            "sha256": "947b16c3ac419e9bc6fbbe5241336d9893f46ec89ae8bcf7ace70cc431f0c422"
+          },
+          {
+            "edition": "s2",
+            "matrix": "W",
+            "row": 1,
+            "col": 2,
+            "area": [
+              100,
+              0,
+              150,
+              50
+            ],
+            "inherits": "/tiles/s1/W/1/2.png",
+            "sha256": "7397b904db450ea163634c86ea65934749ac5f01fa2f01920d273d39eca24c2d"
+          },
+          {
+            "edition": "s2",
+            "matrix": "E",
+            "row": 0,
+            "col": 0,
+            "area": [
+              80,
+              55,
+              140,
+              110
+            ],
+            "inherits": "/tiles/s1/E/0/0.png",
+            "sha256": "a335a5ea3f5ae4d5bca203ab6ffa3320cf0a9db0c046233892d97a609fe2e023"
+          },
+          {
+            "edition": "s2",
+            "matrix": "E",
+            "row": 0,
+            "col": 1,
+            "area": [
+              140,
+              55,
+              200,
+              110
+            ],
+            "inherits": "/tiles/s1/E/0/1.png",
+            "sha256": "a329961ff39b3170e4829a32b569b0696954ecffecf68e7262553ece29eb3bce"
+          },
+          {
+            "edition": "s2",
+            "matrix": "E",
+            "row": 1,
+            "col": 0,
+            "area": [
+              80,
+              0,
+              140,
+              55
+            ],
+            "inherits": "/tiles/s1/E/1/0.png",
+            "sha256": "d299b211bda07e5176c207a4dd31e4f26cb19939a6b46d083372f97ac22905ab"
+          },
+          {
+            "edition": "s2",
+            "matrix": "E",
+            "row": 1,
+            "col": 1,
+            "area": [
+              140,
+              0,
+              200,
+              55
+            ],
+            "inherits": "/tiles/s1/E/1/1.png",
+            "sha256": "b718792b19d16d5a5118a1dedd1948232e72d784a3f3324c0bbbc596de4ef653"
+          }
+        ],
+        "status": 200,
+        "method": "GET",
+        "request": null,
+        "headers": {}
+      }
+    ]
+  ],
+  "assets": {
+    "/tiles/b1/W/0/0.png": {
+      "file": "tiles-b1-W-0-0.png",
+      "digest": "95630d8373d5aa976f857c471877530480df55e0eb6d02409596a301e5bb20e8",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/W/0/1.png": {
+      "file": "tiles-b1-W-0-1.png",
+      "digest": "f98f393dc39282b40ba821bec27556164cb82494c57b8cbaed42713ab7c51982",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/W/0/2.png": {
+      "file": "tiles-b1-W-0-2.png",
+      "digest": "5a5a2c05fcac8d77128ce4fcc3f6d2d6452c0c355c103874738a2268b5555379",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/W/1/0.png": {
+      "file": "tiles-b1-W-1-0.png",
+      "digest": "14a4be5f8d95dfe0b186c554ee3d9f53b109fbead89c924488c2d67934ea29a7",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/W/1/1.png": {
+      "file": "tiles-b1-W-1-1.png",
+      "digest": "047f14c5909eb690ae3727f154d6effa838811b2e23d469eac22abd4984f1745",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/W/1/2.png": {
+      "file": "tiles-b1-W-1-2.png",
+      "digest": "bdc3631408bea3e8449b3435ae629cc3065cc4d1db8ff6f635743c7699d88e75",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/E/0/0.png": {
+      "file": "tiles-b1-E-0-0.png",
+      "digest": "fff5f579006b478b39ce4c90037a66be87c776451c183648000603600cbd6a13",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/E/0/1.png": {
+      "file": "tiles-b1-E-0-1.png",
+      "digest": "206f823b010957b747850e6555d4af79fe2598b13b6c84094362ced6b6020ac0",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/E/1/0.png": {
+      "file": "tiles-b1-E-1-0.png",
+      "digest": "9eca6db763ee45741b5c2c1976416ea6299e4d10042621b47b97289c0eb1e9ca",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/b1/E/1/1.png": {
+      "file": "tiles-b1-E-1-1.png",
+      "digest": "454f78b2f30ce40881a68a7497d87e7fb299bf278d1f061f18fbda41d8558ae4",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/W/0/0.png": {
+      "file": "tiles-w1-W-0-0.png",
+      "digest": "abf42af2b64cc9c20d7fa182e6c0da63da59f57a763909a7868a7fa8d7e57f35",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/W/0/1.png": {
+      "file": "tiles-w1-W-0-1.png",
+      "digest": "a3ec93d897b52a001fc38d4c667248258a9abe8213e524c8609f2a2adb45687b",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/W/0/2.png": {
+      "file": "tiles-w1-W-0-2.png",
+      "digest": "d341e68c7508b66612755bdbdd2c35d592c056faa4d1ab99ca0b0d54ad32a8f1",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/W/1/0.png": {
+      "file": "tiles-w1-W-1-0.png",
+      "digest": "933c400539dbd5bf892a786f7a11d4ad94408d0f0372b79949ed3daedd706571",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/W/1/1.png": {
+      "file": "tiles-w1-W-1-1.png",
+      "digest": "74c5211225375834bde66fc5b04e84d71f008ed89904180acf1dcfa4645d2acf",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/W/1/2.png": {
+      "file": "tiles-w1-W-1-2.png",
+      "digest": "c328983c9cc61333b064f5b9806d1860ba45fa9f5d21358620506b2ce493f4f1",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/E/0/0.png": {
+      "file": "tiles-w1-E-0-0.png",
+      "digest": "86045d23bfaec8314002225c1fb5a905078a73216c091a3d841d6e0a880cb8fd",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/E/0/1.png": {
+      "file": "tiles-w1-E-0-1.png",
+      "digest": "0404572f0d6d842acac9f853b1f803255e26c54153782e28a1ba7d968cf5138f",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/E/1/0.png": {
+      "file": "tiles-w1-E-1-0.png",
+      "digest": "d976ade7d80ed3d0965476aa172149d0b00a193299f6f9ecac2bb72c7e1ae088",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w1/E/1/1.png": {
+      "file": "tiles-w1-E-1-1.png",
+      "digest": "0d7f71b76c9bd05d00c8635347450b5c21d0f7f3943968f20e752b8d0e1c3741",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/W/0/0.png": {
+      "file": "tiles-s1-W-0-0.png",
+      "digest": "2117c791736caa84f5345ed301740c34c39a870f58434f1a8e0fe7440b65afbd",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/W/0/1.png": {
+      "file": "tiles-s1-W-0-1.png",
+      "digest": "d8c8436bc0573ee907b5f2786ab6bde2ddcacb851c0ca187d13b7d42214958ff",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/W/0/2.png": {
+      "file": "tiles-s1-W-0-2.png",
+      "digest": "513f19342ca6943c55b997a50b9b687e4ca598a61a3001a63237b0efd55210fe",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/W/1/0.png": {
+      "file": "tiles-s1-W-1-0.png",
+      "digest": "d612d61032ada3127029c110513945ae44e0fe431be3f73ae0e78c9fcc3eea9c",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/W/1/1.png": {
+      "file": "tiles-s1-W-1-1.png",
+      "digest": "947b16c3ac419e9bc6fbbe5241336d9893f46ec89ae8bcf7ace70cc431f0c422",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/W/1/2.png": {
+      "file": "tiles-s1-W-1-2.png",
+      "digest": "7397b904db450ea163634c86ea65934749ac5f01fa2f01920d273d39eca24c2d",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/E/0/0.png": {
+      "file": "tiles-s1-E-0-0.png",
+      "digest": "a335a5ea3f5ae4d5bca203ab6ffa3320cf0a9db0c046233892d97a609fe2e023",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/E/0/1.png": {
+      "file": "tiles-s1-E-0-1.png",
+      "digest": "a329961ff39b3170e4829a32b569b0696954ecffecf68e7262553ece29eb3bce",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/E/1/0.png": {
+      "file": "tiles-s1-E-1-0.png",
+      "digest": "d299b211bda07e5176c207a4dd31e4f26cb19939a6b46d083372f97ac22905ab",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/s1/E/1/1.png": {
+      "file": "tiles-s1-E-1-1.png",
+      "digest": "b718792b19d16d5a5118a1dedd1948232e72d784a3f3324c0bbbc596de4ef653",
+      "contentType": "image/png",
+      "since": 0
+    },
+    "/tiles/w2/W/0/2.png": {
+      "file": "tiles-w2-W-0-2.png",
+      "digest": "e0b92f0a14a7a2ccfaca7713ac6c26a4eae8f546fa2cc346d990a4cf7b4c6bfe",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/w2/E/0/0.png": {
+      "file": "tiles-w2-E-0-0.png",
+      "digest": "8ba1547d1816a425d94b6afea76190315ee2113e422d86853a6b6cb28134a49e",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/w2/E/0/1.png": {
+      "file": "tiles-w2-E-0-1.png",
+      "digest": "2e58b63297107a8c74dc4766bae6fd54e930548f8546ff1c24fb2ddde2537bf0",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/w2/E/1/0.png": {
+      "file": "tiles-w2-E-1-0.png",
+      "digest": "6b9a5a9760d38f939f43b4a3c4ee6de8f9236939faca65a7f29f1c739a342745",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/w2/E/1/1.png": {
+      "file": "tiles-w2-E-1-1.png",
+      "digest": "40a0fcfc6ce56aa39a6b77d0fe54d67030198da2e2415a01a759b3c80c592c4e",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/b2/W/0/2.png": {
+      "file": "tiles-b2-W-0-2.png",
+      "digest": "c0d81a2d15b97b1153d7282a00e230f6bb47db5e8a3840e0369179503ae4c1a3",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/b2/W/1/2.png": {
+      "file": "tiles-b2-W-1-2.png",
+      "digest": "6e8b245d672d0dc27df2d54da498318ea93f3a63d60d931c25c8353b8c2610b9",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/b2/E/0/0.png": {
+      "file": "tiles-b2-E-0-0.png",
+      "digest": "23a7e476fd1fb3d8c80d2a52ef61d80b9c7942a3643f054119d15dfe10649227",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/b2/E/0/1.png": {
+      "file": "tiles-b2-E-0-1.png",
+      "digest": "22ebe2b60eab96f788be5de470a6380eb60a7ff8f52e536a100600ff64d8c418",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/b2/E/1/0.png": {
+      "file": "tiles-b2-E-1-0.png",
+      "digest": "1f8abfd180e3739ee639e11e3769c97f90467a5f912d9d7f9c36e3f720dfb1ee",
+      "contentType": "image/png",
+      "since": 1
+    },
+    "/tiles/b2/E/1/1.png": {
+      "file": "tiles-b2-E-1-1.png",
+      "digest": "870b44387869b11539d8a4d6762573ad37efe83a7afa960469000c6d90e1b3bb",
+      "contentType": "image/png",
+      "since": 1
+    }
+  }
+}
