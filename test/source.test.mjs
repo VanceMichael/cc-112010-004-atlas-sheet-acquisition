@@ -32,7 +32,7 @@ async function view(origin, step) {
 test('逐次发布可从资料源取回', async t => {
   const origin = await openSource(t)
   const ready = await request(origin, '/ready')
-  assert.deepEqual(await ready.json(), { status: 'ready', step: 0, steps: entries.length })
+  assert.deepEqual(await ready.json(), { status: 'ready', step: 0, steps: release.rounds.length })
   for (const [step, routes] of entries.entries()) {
     await view(origin, step)
     for (const entry of release.rounds[step].filter(row => routes.includes(row.path))) {
@@ -80,4 +80,24 @@ test('印厂可沿旧校样领用单复取实际图幅', async t => {
     assert.equal(piece.status, 200)
     assert.equal(createHash('sha256').update(Buffer.from(await piece.arrayBuffer())).digest('hex'), item.digest)
   }
+})
+
+test('印厂可在确认页断开后查到实收，锁版保留原印版', async t => {
+  const origin = await openSource(t)
+  const [before] = await (await request(origin, '/press')).json()
+  const payload = { plate: before.plate, plateVersion: before.version, window: 'L', transmission: 'press-14',
+    manifest: [{ uri: '/tiles/w1/W/0/0.png' }] }
+  const send = () => request(origin, '/press', { method: 'POST',
+    headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload) })
+  assert.equal((await send()).status, 503)
+  await view(origin, 1)
+  const saved = await (await request(origin, '/press/receipts?transmission=press-14')).json()
+  assert.equal(saved.window, 'L')
+  assert.deepEqual(saved.manifest, payload.manifest)
+  assert.equal((await send()).status, 200)
+  assert.equal((await (await request(origin, '/press')).json())[0].state, 'locked')
+  await view(origin, 2)
+  const [approval] = await (await request(origin, '/reprint')).json()
+  assert.equal(approval.priorPlate, before.plate)
+  assert.notEqual(approval.plate, before.plate)
 })

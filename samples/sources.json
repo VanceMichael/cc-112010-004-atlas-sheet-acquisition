@@ -597,6 +597,31 @@
         "method": "GET",
         "request": null,
         "headers": {}
+      },
+      {
+        "method": "GET",
+        "path": "/press",
+        "status": 200,
+        "body": [
+          {
+            "job": "P-7",
+            "plate": "T70",
+            "version": "c1",
+            "state": "open",
+            "accepted": [
+              {
+                "window": "R",
+                "proof": "proof-P7-1",
+                "editions": [
+                  "b1",
+                  "s1"
+                ]
+              }
+            ]
+          }
+        ],
+        "request": null,
+        "headers": {}
       }
     ],
     [
@@ -1363,6 +1388,80 @@
             }
           ]
         },
+        "request": null,
+        "headers": {}
+      },
+      {
+        "method": "GET",
+        "path": "/press",
+        "status": 200,
+        "body": [
+          {
+            "job": "P-7",
+            "plate": "T70",
+            "version": "c2",
+            "state": "locked",
+            "accepted": [
+              {
+                "window": "R",
+                "proof": "proof-P7-1",
+                "editions": [
+                  "b1",
+                  "s1"
+                ]
+              }
+            ]
+          }
+        ],
+        "request": null,
+        "headers": {}
+      }
+    ],
+    [
+      {
+        "method": "GET",
+        "path": "/press",
+        "status": 200,
+        "body": [
+          {
+            "job": "P-7",
+            "plate": "T70",
+            "version": "c2",
+            "state": "locked",
+            "accepted": [
+              {
+                "window": "R",
+                "proof": "proof-P7-1",
+                "editions": [
+                  "b1",
+                  "s1"
+                ]
+              }
+            ]
+          },
+          {
+            "job": "P-7",
+            "plate": "T71",
+            "version": "c1",
+            "state": "open",
+            "accepted": []
+          }
+        ],
+        "request": null,
+        "headers": {}
+      },
+      {
+        "method": "GET",
+        "path": "/reprint",
+        "status": 200,
+        "body": [
+          {
+            "job": "P-7",
+            "priorPlate": "T70",
+            "plate": "T71",
+            "approvedBy": "重印编辑"
+          }
+        ],
         "request": null,
         "headers": {}
       }

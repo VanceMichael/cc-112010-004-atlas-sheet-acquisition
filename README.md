@@ -11,4 +11,6 @@
 
 `/proofs` 的 manifest 是印厂历史留存的原校样领用单，requested 保留当时的窗口及版本，contents 是实际记账的原图幅和摘要。该领用单与最新 jobs 分别发布。
 
+印厂 /press 记录待印版、锁版状态与逐窗实收的版次，版本由印厂独立管理。POST /press 接收 plate、plateVersion、transmission、window 与非空 manifest，同一 transmission 重放须保持内容一致。GET /press/receipts?transmission=… 回读实际接收的清单。/reprint 是重印编辑另行公布的重开单。历史校样的原图幅在后继版仍可按原领用单查询。
+
 运行 `npm test` 可校验资料源实际应答。样本内容存放在 `samples/`，开发时通过各来源的本地地址进行联调。

@@ -66,6 +66,7 @@ async function sendBinary(req, res, path, asset) {
 
 export function makeSource() {
   let step = 0
+  const receipts = new Map()
 
   return createServer(async (req, res) => {
     try {
@@ -83,6 +84,34 @@ export function makeSource() {
       }
       const body = req.method === 'POST' ? await input(req) : null
 
+      if (url.pathname === '/press/receipts' && req.method === 'GET') {
+        const item = receipts.get(url.searchParams.get('transmission'))
+        return item ? send(res, 200, item.receipt) : send(res, 404, { 原因: '未查到交接' })
+      }
+      if (url.pathname === '/press' && req.method === 'POST') {
+        const { plate, plateVersion, transmission, window, manifest } = body ?? {}
+        if (![plate, plateVersion, transmission, window].every(value => typeof value === 'string' && value.length)
+            || !Array.isArray(manifest) || !manifest.length) {
+          return send(res, 400, { 原因: '没有完整的交接字段' })
+        }
+        if (receipts.has(transmission)) {
+          const previous = receipts.get(transmission)
+          return isDeepStrictEqual(previous.request, body)
+            ? send(res, 200, previous.receipt) : send(res, 409, { 原因: '传输编号与原内容冲突' })
+        }
+        const plates = lookup(step, 'GET', '/press', null)?.body ?? []
+        const plateRow = plates.find(row => row.plate === plate)
+        if (plateRow?.state !== 'open' || plateRow.version !== plateVersion) {
+          return send(res, 409, { 原因: '印版已锁定或版次已更改' })
+        }
+        if (plateRow.accepted.some(item => item.window === window) ||
+            [...receipts.values()].some(item => item.receipt.plate === plate && item.receipt.window === window)) {
+          return send(res, 409, { 原因: '该窗口已有印厂接收记录' })
+        }
+        const receipt = { plate, plateVersion, window, transmission, manifest, state: 'accepted' }
+        receipts.set(transmission, { request: body, receipt })
+        return step === 0 ? send(res, 503, { 原因: '交接回条暂不可读' }) : send(res, 201, receipt)
+      }
       const path = normalizedPath(req.url)
       const entry = lookup(step, req.method, path, body)
       const asset = replay.assets?.[path]
