@@ -66,3 +66,18 @@ test('二进制资料摘要和传输范围一致', { skip: !Object.keys(release.
     assert.deepEqual(Buffer.from(await partial.arrayBuffer()), bytes.subarray(0, 8))
   }
 })
+
+test('印厂可沿旧校样领用单复取实际图幅', async t => {
+  const origin = await openSource(t)
+  await view(origin, 1)
+  const [proof] = await (await request(origin, '/proofs')).json()
+  const manifest = await (await request(origin, proof.manifest)).json()
+  const [current] = await (await request(origin, '/jobs')).json()
+  assert.notDeepEqual(manifest.requested.windows, current.windows)
+  assert.equal(new Set(manifest.contents.map(item => item.window)).size, 2)
+  for (const item of manifest.contents) {
+    const piece = await request(origin, item.uri)
+    assert.equal(piece.status, 200)
+    assert.equal(createHash('sha256').update(Buffer.from(await piece.arrayBuffer())).digest('hex'), item.digest)
+  }
+})

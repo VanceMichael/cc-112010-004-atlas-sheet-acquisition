@@ -714,7 +714,8 @@
               "b1",
               "w1",
               "s1"
-            ]
+            ],
+            "manifest": "/proofs/proof-P7-1"
           }
         ],
         "status": 200,
@@ -1152,6 +1153,216 @@
         ],
         "status": 200,
         "method": "GET",
+        "request": null,
+        "headers": {}
+      },
+      {
+        "method": "GET",
+        "path": "/proofs/proof-P7-1",
+        "status": 200,
+        "body": {
+          "id": "proof-P7-1",
+          "requested": {
+            "job": "P-7",
+            "windows": [
+              {
+                "id": "L",
+                "extent": [
+                  10,
+                  10,
+                  115,
+                  95
+                ],
+                "bleed": 5,
+                "theme": "water",
+                "edition": "w1"
+              },
+              {
+                "id": "R",
+                "extent": [
+                  90,
+                  25,
+                  184,
+                  95
+                ],
+                "bleed": 5,
+                "theme": "soil",
+                "edition": "s1"
+              }
+            ],
+            "base": "b1"
+          },
+          "contents": [
+            {
+              "window": "L",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/0/0.png",
+              "digest": "95630d8373d5aa976f857c471877530480df55e0eb6d02409596a301e5bb20e8"
+            },
+            {
+              "window": "L",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/0/1.png",
+              "digest": "f98f393dc39282b40ba821bec27556164cb82494c57b8cbaed42713ab7c51982"
+            },
+            {
+              "window": "L",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/0/2.png",
+              "digest": "5a5a2c05fcac8d77128ce4fcc3f6d2d6452c0c355c103874738a2268b5555379"
+            },
+            {
+              "window": "L",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/1/0.png",
+              "digest": "14a4be5f8d95dfe0b186c554ee3d9f53b109fbead89c924488c2d67934ea29a7"
+            },
+            {
+              "window": "L",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/1/1.png",
+              "digest": "047f14c5909eb690ae3727f154d6effa838811b2e23d469eac22abd4984f1745"
+            },
+            {
+              "window": "L",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/1/2.png",
+              "digest": "bdc3631408bea3e8449b3435ae629cc3065cc4d1db8ff6f635743c7699d88e75"
+            },
+            {
+              "window": "L",
+              "edition": "w1",
+              "uri": "/tiles/w1/W/0/0.png",
+              "digest": "abf42af2b64cc9c20d7fa182e6c0da63da59f57a763909a7868a7fa8d7e57f35"
+            },
+            {
+              "window": "L",
+              "edition": "w1",
+              "uri": "/tiles/w1/W/0/1.png",
+              "digest": "a3ec93d897b52a001fc38d4c667248258a9abe8213e524c8609f2a2adb45687b"
+            },
+            {
+              "window": "L",
+              "edition": "w1",
+              "uri": "/tiles/w1/W/0/2.png",
+              "digest": "d341e68c7508b66612755bdbdd2c35d592c056faa4d1ab99ca0b0d54ad32a8f1"
+            },
+            {
+              "window": "L",
+              "edition": "w1",
+              "uri": "/tiles/w1/W/1/0.png",
+              "digest": "933c400539dbd5bf892a786f7a11d4ad94408d0f0372b79949ed3daedd706571"
+            },
+            {
+              "window": "L",
+              "edition": "w1",
+              "uri": "/tiles/w1/W/1/1.png",
+              "digest": "74c5211225375834bde66fc5b04e84d71f008ed89904180acf1dcfa4645d2acf"
+            },
+            {
+              "window": "L",
+              "edition": "w1",
+              "uri": "/tiles/w1/W/1/2.png",
+              "digest": "c328983c9cc61333b064f5b9806d1860ba45fa9f5d21358620506b2ce493f4f1"
+            },
+            {
+              "window": "R",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/0/1.png",
+              "digest": "f98f393dc39282b40ba821bec27556164cb82494c57b8cbaed42713ab7c51982"
+            },
+            {
+              "window": "R",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/0/2.png",
+              "digest": "5a5a2c05fcac8d77128ce4fcc3f6d2d6452c0c355c103874738a2268b5555379"
+            },
+            {
+              "window": "R",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/1/1.png",
+              "digest": "047f14c5909eb690ae3727f154d6effa838811b2e23d469eac22abd4984f1745"
+            },
+            {
+              "window": "R",
+              "edition": "b1",
+              "uri": "/tiles/b1/W/1/2.png",
+              "digest": "bdc3631408bea3e8449b3435ae629cc3065cc4d1db8ff6f635743c7699d88e75"
+            },
+            {
+              "window": "R",
+              "edition": "b1",
+              "uri": "/tiles/b1/E/0/0.png",
+              "digest": "fff5f579006b478b39ce4c90037a66be87c776451c183648000603600cbd6a13"
+            },
+            {
+              "window": "R",
+              "edition": "b1",
+              "uri": "/tiles/b1/E/0/1.png",
+              "digest": "206f823b010957b747850e6555d4af79fe2598b13b6c84094362ced6b6020ac0"
+            },
+            {
+              "window": "R",
+              "edition": "b1",
+              "uri": "/tiles/b1/E/1/0.png",
+              "digest": "9eca6db763ee45741b5c2c1976416ea6299e4d10042621b47b97289c0eb1e9ca"
+            },
+            {
+              "window": "R",
+              "edition": "b1",
+              "uri": "/tiles/b1/E/1/1.png",
+              "digest": "454f78b2f30ce40881a68a7497d87e7fb299bf278d1f061f18fbda41d8558ae4"
+            },
+            {
+              "window": "R",
+              "edition": "s1",
+              "uri": "/tiles/s1/W/0/1.png",
+              "digest": "d8c8436bc0573ee907b5f2786ab6bde2ddcacb851c0ca187d13b7d42214958ff"
+            },
+            {
+              "window": "R",
+              "edition": "s1",
+              "uri": "/tiles/s1/W/0/2.png",
+              "digest": "513f19342ca6943c55b997a50b9b687e4ca598a61a3001a63237b0efd55210fe"
+            },
+            {
+              "window": "R",
+              "edition": "s1",
+              "uri": "/tiles/s1/W/1/1.png",
+              "digest": "947b16c3ac419e9bc6fbbe5241336d9893f46ec89ae8bcf7ace70cc431f0c422"
+            },
+            {
+              "window": "R",
+              "edition": "s1",
+              "uri": "/tiles/s1/W/1/2.png",
+              "digest": "7397b904db450ea163634c86ea65934749ac5f01fa2f01920d273d39eca24c2d"
+            },
+            {
+              "window": "R",
+              "edition": "s1",
+              "uri": "/tiles/s1/E/0/0.png",
+              "digest": "a335a5ea3f5ae4d5bca203ab6ffa3320cf0a9db0c046233892d97a609fe2e023"
+            },
+            {
+              "window": "R",
+              "edition": "s1",
+              "uri": "/tiles/s1/E/0/1.png",
+              "digest": "a329961ff39b3170e4829a32b569b0696954ecffecf68e7262553ece29eb3bce"
+            },
+            {
+              "window": "R",
+              "edition": "s1",
+              "uri": "/tiles/s1/E/1/0.png",
+              "digest": "d299b211bda07e5176c207a4dd31e4f26cb19939a6b46d083372f97ac22905ab"
+            },
+            {
+              "window": "R",
+              "edition": "s1",
+              "uri": "/tiles/s1/E/1/1.png",
+              "digest": "b718792b19d16d5a5118a1dedd1948232e72d784a3f3324c0bbbc596de4ef653"
+            }
+          ]
+        },
         "request": null,
         "headers": {}
       }
