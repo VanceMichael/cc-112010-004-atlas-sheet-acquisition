@@ -84,6 +84,13 @@ export function makeSource() {
       }
       const body = req.method === 'POST' ? await input(req) : null
 
+      if (url.pathname === '/press' && req.method === 'GET') {
+        const plates = lookup(step, 'GET', '/press', null)?.body ?? []
+        return send(res, 200, plates.map(plate => ({ ...plate, accepted: [
+          ...plate.accepted,
+          ...[...receipts.values()].map(item => item.receipt).filter(item => item.plate === plate.plate),
+        ] })))
+      }
       if (url.pathname === '/press/receipts' && req.method === 'GET') {
         const item = receipts.get(url.searchParams.get('transmission'))
         return item ? send(res, 200, item.receipt) : send(res, 404, { 原因: '未查到交接' })
