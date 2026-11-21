@@ -8,6 +8,10 @@
   },
   "scripts": {
     "start": "node serve.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "acquire": "node cli.mjs acquire",
+    "verify": "node cli.mjs verify",
+    "plates": "node cli.mjs plates",
+    "handover": "node cli.mjs handover"
   }
 }

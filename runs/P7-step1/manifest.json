@@ -1,0 +1,1546 @@
+{
+  "schema": "prepress-acquisition/1",
+  "job": "P-7",
+  "base": "b1",
+  "scale": "1:25000",
+  "source": "http://127.0.0.1:4173",
+  "releaseStep": 1,
+  "generatedAt": "2026-11-21T18:38:52.463Z",
+  "delivery": {
+    "complete": false,
+    "missingCells": [
+      {
+        "window": "L",
+        "edition": "w2",
+        "matrix": "W",
+        "row": 1,
+        "col": 2,
+        "cellArea": [
+          100,
+          0,
+          150,
+          50
+        ],
+        "sides": [
+          "south",
+          "east"
+        ],
+        "reason": "在版本可取范围内但目录缺件，且无继承/留白声明"
+      }
+    ],
+    "failures": []
+  },
+  "windows": [
+    {
+      "window": "L",
+      "theme": "water",
+      "edition": "w2",
+      "base": "b1",
+      "scale": "1:25000",
+      "extent": [
+        10,
+        10,
+        117,
+        95
+      ],
+      "bleed": 8,
+      "region": [
+        2,
+        2,
+        125,
+        103
+      ],
+      "ownership": [
+        {
+          "matrix": "W",
+          "priority": 2,
+          "owned": [
+            [
+              2,
+              2,
+              125,
+              100
+            ]
+          ]
+        },
+        {
+          "matrix": "E",
+          "priority": 1,
+          "owned": [
+            [
+              100,
+              100,
+              125,
+              103
+            ]
+          ]
+        }
+      ],
+      "outside": [
+        [
+          2,
+          100,
+          100,
+          103
+        ]
+      ],
+      "counts": {
+        "available": 13,
+        "blank": 0,
+        "missing": 1,
+        "outside": 0
+      },
+      "cells": [
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 0,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            0,
+            50,
+            50,
+            100
+          ],
+          "ownedArea": 2400,
+          "sides": [
+            "west"
+          ],
+          "uri": "/tiles/b1/W/0/0.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 0,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            50,
+            50,
+            100,
+            100
+          ],
+          "ownedArea": 2500,
+          "sides": [],
+          "uri": "/tiles/b1/W/0/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 0,
+          "col": 2,
+          "status": "available",
+          "cellArea": [
+            100,
+            50,
+            150,
+            100
+          ],
+          "ownedArea": 1250,
+          "sides": [
+            "east"
+          ],
+          "uri": "/tiles/b1/W/0/2.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 1,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            0,
+            0,
+            50,
+            50
+          ],
+          "ownedArea": 2304,
+          "sides": [
+            "west",
+            "south"
+          ],
+          "uri": "/tiles/b1/W/1/0.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 1,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            50,
+            0,
+            100,
+            50
+          ],
+          "ownedArea": 2400,
+          "sides": [
+            "south"
+          ],
+          "uri": "/tiles/b1/W/1/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 1,
+          "col": 2,
+          "status": "available",
+          "cellArea": [
+            100,
+            0,
+            150,
+            50
+          ],
+          "ownedArea": 1200,
+          "sides": [
+            "south",
+            "east"
+          ],
+          "uri": "/tiles/b1/W/1/2.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "E",
+          "row": 0,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            80,
+            55,
+            140,
+            110
+          ],
+          "ownedArea": 75,
+          "sides": [
+            "east",
+            "north"
+          ],
+          "uri": "/tiles/b1/E/0/0.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "w2",
+          "matrix": "W",
+          "row": 0,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            0,
+            50,
+            50,
+            100
+          ],
+          "ownedArea": 2400,
+          "sides": [
+            "west"
+          ],
+          "uri": "/tiles/w1/W/0/0.png",
+          "inherited": true,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "w2",
+          "matrix": "W",
+          "row": 0,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            50,
+            50,
+            100,
+            100
+          ],
+          "ownedArea": 2500,
+          "sides": [],
+          "uri": "/tiles/w1/W/0/1.png",
+          "inherited": true,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "w2",
+          "matrix": "W",
+          "row": 0,
+          "col": 2,
+          "status": "available",
+          "cellArea": [
+            100,
+            50,
+            150,
+            100
+          ],
+          "ownedArea": 1250,
+          "sides": [
+            "east"
+          ],
+          "uri": "/tiles/w2/W/0/2.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "w2",
+          "matrix": "W",
+          "row": 1,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            0,
+            0,
+            50,
+            50
+          ],
+          "ownedArea": 2304,
+          "sides": [
+            "west",
+            "south"
+          ],
+          "uri": "/tiles/w1/W/1/0.png",
+          "inherited": true,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "w2",
+          "matrix": "W",
+          "row": 1,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            50,
+            0,
+            100,
+            50
+          ],
+          "ownedArea": 2400,
+          "sides": [
+            "south"
+          ],
+          "uri": "/tiles/w1/W/1/1.png",
+          "inherited": true,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "w2",
+          "matrix": "W",
+          "row": 1,
+          "col": 2,
+          "status": "missing",
+          "cellArea": [
+            100,
+            0,
+            150,
+            50
+          ],
+          "ownedArea": 1200,
+          "sides": [
+            "south",
+            "east"
+          ],
+          "uri": null,
+          "inherited": false,
+          "reason": "在版本可取范围内但目录缺件，且无继承/留白声明"
+        },
+        {
+          "layer": "theme",
+          "edition": "w2",
+          "matrix": "E",
+          "row": 0,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            80,
+            55,
+            140,
+            110
+          ],
+          "ownedArea": 75,
+          "sides": [
+            "east",
+            "north"
+          ],
+          "uri": "/tiles/w2/E/0/0.png",
+          "inherited": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "window": "R",
+      "theme": "soil",
+      "edition": "s1",
+      "base": "b1",
+      "scale": "1:25000",
+      "extent": [
+        90,
+        25,
+        184,
+        95
+      ],
+      "bleed": 5,
+      "region": [
+        85,
+        20,
+        189,
+        100
+      ],
+      "ownership": [
+        {
+          "matrix": "W",
+          "priority": 2,
+          "owned": [
+            [
+              85,
+              20,
+              135,
+              100
+            ]
+          ]
+        },
+        {
+          "matrix": "E",
+          "priority": 1,
+          "owned": [
+            [
+              135,
+              20,
+              189,
+              100
+            ]
+          ]
+        }
+      ],
+      "outside": [],
+      "counts": {
+        "available": 16,
+        "blank": 0,
+        "missing": 0,
+        "outside": 0
+      },
+      "cells": [
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 0,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            50,
+            50,
+            100,
+            100
+          ],
+          "ownedArea": 750,
+          "sides": [
+            "west",
+            "north"
+          ],
+          "uri": "/tiles/b1/W/0/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 0,
+          "col": 2,
+          "status": "available",
+          "cellArea": [
+            100,
+            50,
+            150,
+            100
+          ],
+          "ownedArea": 1750,
+          "sides": [
+            "north"
+          ],
+          "uri": "/tiles/b1/W/0/2.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 1,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            50,
+            0,
+            100,
+            50
+          ],
+          "ownedArea": 450,
+          "sides": [
+            "west",
+            "south"
+          ],
+          "uri": "/tiles/b1/W/1/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "W",
+          "row": 1,
+          "col": 2,
+          "status": "available",
+          "cellArea": [
+            100,
+            0,
+            150,
+            50
+          ],
+          "ownedArea": 1050,
+          "sides": [
+            "south"
+          ],
+          "uri": "/tiles/b1/W/1/2.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "E",
+          "row": 0,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            80,
+            55,
+            140,
+            110
+          ],
+          "ownedArea": 225,
+          "sides": [
+            "north"
+          ],
+          "uri": "/tiles/b1/E/0/0.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "E",
+          "row": 0,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            140,
+            55,
+            200,
+            110
+          ],
+          "ownedArea": 2205,
+          "sides": [
+            "east",
+            "north"
+          ],
+          "uri": "/tiles/b1/E/0/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "E",
+          "row": 1,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            80,
+            0,
+            140,
+            55
+          ],
+          "ownedArea": 175,
+          "sides": [
+            "south"
+          ],
+          "uri": "/tiles/b1/E/1/0.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "base",
+          "edition": "b1",
+          "matrix": "E",
+          "row": 1,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            140,
+            0,
+            200,
+            55
+          ],
+          "ownedArea": 1715,
+          "sides": [
+            "south",
+            "east"
+          ],
+          "uri": "/tiles/b1/E/1/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "s1",
+          "matrix": "W",
+          "row": 0,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            50,
+            50,
+            100,
+            100
+          ],
+          "ownedArea": 750,
+          "sides": [
+            "west",
+            "north"
+          ],
+          "uri": "/tiles/s1/W/0/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "s1",
+          "matrix": "W",
+          "row": 0,
+          "col": 2,
+          "status": "available",
+          "cellArea": [
+            100,
+            50,
+            150,
+            100
+          ],
+          "ownedArea": 1750,
+          "sides": [
+            "north"
+          ],
+          "uri": "/tiles/s1/W/0/2.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "s1",
+          "matrix": "W",
+          "row": 1,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            50,
+            0,
+            100,
+            50
+          ],
+          "ownedArea": 450,
+          "sides": [
+            "west",
+            "south"
+          ],
+          "uri": "/tiles/s1/W/1/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "s1",
+          "matrix": "W",
+          "row": 1,
+          "col": 2,
+          "status": "available",
+          "cellArea": [
+            100,
+            0,
+            150,
+            50
+          ],
+          "ownedArea": 1050,
+          "sides": [
+            "south"
+          ],
+          "uri": "/tiles/s1/W/1/2.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "s1",
+          "matrix": "E",
+          "row": 0,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            80,
+            55,
+            140,
+            110
+          ],
+          "ownedArea": 225,
+          "sides": [
+            "north"
+          ],
+          "uri": "/tiles/s1/E/0/0.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "s1",
+          "matrix": "E",
+          "row": 0,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            140,
+            55,
+            200,
+            110
+          ],
+          "ownedArea": 2205,
+          "sides": [
+            "east",
+            "north"
+          ],
+          "uri": "/tiles/s1/E/0/1.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "s1",
+          "matrix": "E",
+          "row": 1,
+          "col": 0,
+          "status": "available",
+          "cellArea": [
+            80,
+            0,
+            140,
+            55
+          ],
+          "ownedArea": 175,
+          "sides": [
+            "south"
+          ],
+          "uri": "/tiles/s1/E/1/0.png",
+          "inherited": false,
+          "reason": null
+        },
+        {
+          "layer": "theme",
+          "edition": "s1",
+          "matrix": "E",
+          "row": 1,
+          "col": 1,
+          "status": "available",
+          "cellArea": [
+            140,
+            0,
+            200,
+            55
+          ],
+          "ownedArea": 1715,
+          "sides": [
+            "south",
+            "east"
+          ],
+          "uri": "/tiles/s1/E/1/1.png",
+          "inherited": false,
+          "reason": null
+        }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "uri": "/tiles/b1/E/0/0.png",
+      "localPath": "tiles/b1/E/0/0.png",
+      "digest": "fff5f579006b478b39ce4c90037a66be87c776451c183648000603600cbd6a13",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "fff5f579006b478b39ce4c90037a66be87c776451c183648000603600cbd6a13",
+        "bytes": 491,
+        "etag": "fff5f579006b478b39ce4c90037a66be87c776451c183648000603600cbd6a13"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "E",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "window": "R",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "E",
+          "row": 0,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/E/0/1.png",
+      "localPath": "tiles/b1/E/0/1.png",
+      "digest": "206f823b010957b747850e6555d4af79fe2598b13b6c84094362ced6b6020ac0",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "206f823b010957b747850e6555d4af79fe2598b13b6c84094362ced6b6020ac0",
+        "bytes": 495,
+        "etag": "206f823b010957b747850e6555d4af79fe2598b13b6c84094362ced6b6020ac0"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "E",
+          "row": 0,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/E/1/0.png",
+      "localPath": "tiles/b1/E/1/0.png",
+      "digest": "9eca6db763ee45741b5c2c1976416ea6299e4d10042621b47b97289c0eb1e9ca",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "9eca6db763ee45741b5c2c1976416ea6299e4d10042621b47b97289c0eb1e9ca",
+        "bytes": 482,
+        "etag": "9eca6db763ee45741b5c2c1976416ea6299e4d10042621b47b97289c0eb1e9ca"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "E",
+          "row": 1,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/E/1/1.png",
+      "localPath": "tiles/b1/E/1/1.png",
+      "digest": "454f78b2f30ce40881a68a7497d87e7fb299bf278d1f061f18fbda41d8558ae4",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "454f78b2f30ce40881a68a7497d87e7fb299bf278d1f061f18fbda41d8558ae4",
+        "bytes": 472,
+        "etag": "454f78b2f30ce40881a68a7497d87e7fb299bf278d1f061f18fbda41d8558ae4"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "E",
+          "row": 1,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/W/0/0.png",
+      "localPath": "tiles/b1/W/0/0.png",
+      "digest": "95630d8373d5aa976f857c471877530480df55e0eb6d02409596a301e5bb20e8",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "95630d8373d5aa976f857c471877530480df55e0eb6d02409596a301e5bb20e8",
+        "bytes": 475,
+        "etag": "95630d8373d5aa976f857c471877530480df55e0eb6d02409596a301e5bb20e8"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 0,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/W/0/1.png",
+      "localPath": "tiles/b1/W/0/1.png",
+      "digest": "f98f393dc39282b40ba821bec27556164cb82494c57b8cbaed42713ab7c51982",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "f98f393dc39282b40ba821bec27556164cb82494c57b8cbaed42713ab7c51982",
+        "bytes": 485,
+        "etag": "f98f393dc39282b40ba821bec27556164cb82494c57b8cbaed42713ab7c51982"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "window": "R",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 0,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/W/0/2.png",
+      "localPath": "tiles/b1/W/0/2.png",
+      "digest": "5a5a2c05fcac8d77128ce4fcc3f6d2d6452c0c355c103874738a2268b5555379",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "5a5a2c05fcac8d77128ce4fcc3f6d2d6452c0c355c103874738a2268b5555379",
+        "bytes": 493,
+        "etag": "5a5a2c05fcac8d77128ce4fcc3f6d2d6452c0c355c103874738a2268b5555379"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "window": "R",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 0,
+          "col": 2
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/W/1/0.png",
+      "localPath": "tiles/b1/W/1/0.png",
+      "digest": "14a4be5f8d95dfe0b186c554ee3d9f53b109fbead89c924488c2d67934ea29a7",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "14a4be5f8d95dfe0b186c554ee3d9f53b109fbead89c924488c2d67934ea29a7",
+        "bytes": 495,
+        "etag": "14a4be5f8d95dfe0b186c554ee3d9f53b109fbead89c924488c2d67934ea29a7"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 1,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/W/1/1.png",
+      "localPath": "tiles/b1/W/1/1.png",
+      "digest": "047f14c5909eb690ae3727f154d6effa838811b2e23d469eac22abd4984f1745",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "047f14c5909eb690ae3727f154d6effa838811b2e23d469eac22abd4984f1745",
+        "bytes": 489,
+        "etag": "047f14c5909eb690ae3727f154d6effa838811b2e23d469eac22abd4984f1745"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "window": "R",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 1,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/b1/W/1/2.png",
+      "localPath": "tiles/b1/W/1/2.png",
+      "digest": "bdc3631408bea3e8449b3435ae629cc3065cc4d1db8ff6f635743c7699d88e75",
+      "physicalEdition": "b1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "bdc3631408bea3e8449b3435ae629cc3065cc4d1db8ff6f635743c7699d88e75",
+        "bytes": 480,
+        "etag": "bdc3631408bea3e8449b3435ae629cc3065cc4d1db8ff6f635743c7699d88e75"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 1,
+          "col": 2
+        },
+        {
+          "window": "R",
+          "edition": "b1",
+          "role": "base",
+          "matrix": "W",
+          "row": 1,
+          "col": 2
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/s1/E/0/0.png",
+      "localPath": "tiles/s1/E/0/0.png",
+      "digest": "a335a5ea3f5ae4d5bca203ab6ffa3320cf0a9db0c046233892d97a609fe2e023",
+      "physicalEdition": "s1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "a335a5ea3f5ae4d5bca203ab6ffa3320cf0a9db0c046233892d97a609fe2e023",
+        "bytes": 479,
+        "etag": "a335a5ea3f5ae4d5bca203ab6ffa3320cf0a9db0c046233892d97a609fe2e023"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "s1",
+          "role": "theme",
+          "matrix": "E",
+          "row": 0,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/s1/E/0/1.png",
+      "localPath": "tiles/s1/E/0/1.png",
+      "digest": "a329961ff39b3170e4829a32b569b0696954ecffecf68e7262553ece29eb3bce",
+      "physicalEdition": "s1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "a329961ff39b3170e4829a32b569b0696954ecffecf68e7262553ece29eb3bce",
+        "bytes": 489,
+        "etag": "a329961ff39b3170e4829a32b569b0696954ecffecf68e7262553ece29eb3bce"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "s1",
+          "role": "theme",
+          "matrix": "E",
+          "row": 0,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/s1/E/1/0.png",
+      "localPath": "tiles/s1/E/1/0.png",
+      "digest": "d299b211bda07e5176c207a4dd31e4f26cb19939a6b46d083372f97ac22905ab",
+      "physicalEdition": "s1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "d299b211bda07e5176c207a4dd31e4f26cb19939a6b46d083372f97ac22905ab",
+        "bytes": 493,
+        "etag": "d299b211bda07e5176c207a4dd31e4f26cb19939a6b46d083372f97ac22905ab"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "s1",
+          "role": "theme",
+          "matrix": "E",
+          "row": 1,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/s1/E/1/1.png",
+      "localPath": "tiles/s1/E/1/1.png",
+      "digest": "b718792b19d16d5a5118a1dedd1948232e72d784a3f3324c0bbbc596de4ef653",
+      "physicalEdition": "s1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "b718792b19d16d5a5118a1dedd1948232e72d784a3f3324c0bbbc596de4ef653",
+        "bytes": 486,
+        "etag": "b718792b19d16d5a5118a1dedd1948232e72d784a3f3324c0bbbc596de4ef653"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "s1",
+          "role": "theme",
+          "matrix": "E",
+          "row": 1,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/s1/W/0/1.png",
+      "localPath": "tiles/s1/W/0/1.png",
+      "digest": "d8c8436bc0573ee907b5f2786ab6bde2ddcacb851c0ca187d13b7d42214958ff",
+      "physicalEdition": "s1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "d8c8436bc0573ee907b5f2786ab6bde2ddcacb851c0ca187d13b7d42214958ff",
+        "bytes": 472,
+        "etag": "d8c8436bc0573ee907b5f2786ab6bde2ddcacb851c0ca187d13b7d42214958ff"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "s1",
+          "role": "theme",
+          "matrix": "W",
+          "row": 0,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/s1/W/0/2.png",
+      "localPath": "tiles/s1/W/0/2.png",
+      "digest": "513f19342ca6943c55b997a50b9b687e4ca598a61a3001a63237b0efd55210fe",
+      "physicalEdition": "s1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "513f19342ca6943c55b997a50b9b687e4ca598a61a3001a63237b0efd55210fe",
+        "bytes": 482,
+        "etag": "513f19342ca6943c55b997a50b9b687e4ca598a61a3001a63237b0efd55210fe"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "s1",
+          "role": "theme",
+          "matrix": "W",
+          "row": 0,
+          "col": 2
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/s1/W/1/1.png",
+      "localPath": "tiles/s1/W/1/1.png",
+      "digest": "947b16c3ac419e9bc6fbbe5241336d9893f46ec89ae8bcf7ace70cc431f0c422",
+      "physicalEdition": "s1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "947b16c3ac419e9bc6fbbe5241336d9893f46ec89ae8bcf7ace70cc431f0c422",
+        "bytes": 495,
+        "etag": "947b16c3ac419e9bc6fbbe5241336d9893f46ec89ae8bcf7ace70cc431f0c422"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "s1",
+          "role": "theme",
+          "matrix": "W",
+          "row": 1,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/s1/W/1/2.png",
+      "localPath": "tiles/s1/W/1/2.png",
+      "digest": "7397b904db450ea163634c86ea65934749ac5f01fa2f01920d273d39eca24c2d",
+      "physicalEdition": "s1",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "7397b904db450ea163634c86ea65934749ac5f01fa2f01920d273d39eca24c2d",
+        "bytes": 491,
+        "etag": "7397b904db450ea163634c86ea65934749ac5f01fa2f01920d273d39eca24c2d"
+      },
+      "references": [
+        {
+          "window": "R",
+          "edition": "s1",
+          "role": "theme",
+          "matrix": "W",
+          "row": 1,
+          "col": 2
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/w1/W/0/0.png",
+      "localPath": "tiles/w1/W/0/0.png",
+      "digest": "abf42af2b64cc9c20d7fa182e6c0da63da59f57a763909a7868a7fa8d7e57f35",
+      "physicalEdition": "w1",
+      "inherited": true,
+      "verification": {
+        "ok": true,
+        "digest": "abf42af2b64cc9c20d7fa182e6c0da63da59f57a763909a7868a7fa8d7e57f35",
+        "bytes": 493,
+        "etag": "abf42af2b64cc9c20d7fa182e6c0da63da59f57a763909a7868a7fa8d7e57f35"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "w2",
+          "role": "theme",
+          "matrix": "W",
+          "row": 0,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/w1/W/0/1.png",
+      "localPath": "tiles/w1/W/0/1.png",
+      "digest": "a3ec93d897b52a001fc38d4c667248258a9abe8213e524c8609f2a2adb45687b",
+      "physicalEdition": "w1",
+      "inherited": true,
+      "verification": {
+        "ok": true,
+        "digest": "a3ec93d897b52a001fc38d4c667248258a9abe8213e524c8609f2a2adb45687b",
+        "bytes": 485,
+        "etag": "a3ec93d897b52a001fc38d4c667248258a9abe8213e524c8609f2a2adb45687b"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "w2",
+          "role": "theme",
+          "matrix": "W",
+          "row": 0,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/w1/W/1/0.png",
+      "localPath": "tiles/w1/W/1/0.png",
+      "digest": "933c400539dbd5bf892a786f7a11d4ad94408d0f0372b79949ed3daedd706571",
+      "physicalEdition": "w1",
+      "inherited": true,
+      "verification": {
+        "ok": true,
+        "digest": "933c400539dbd5bf892a786f7a11d4ad94408d0f0372b79949ed3daedd706571",
+        "bytes": 469,
+        "etag": "933c400539dbd5bf892a786f7a11d4ad94408d0f0372b79949ed3daedd706571"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "w2",
+          "role": "theme",
+          "matrix": "W",
+          "row": 1,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/w1/W/1/1.png",
+      "localPath": "tiles/w1/W/1/1.png",
+      "digest": "74c5211225375834bde66fc5b04e84d71f008ed89904180acf1dcfa4645d2acf",
+      "physicalEdition": "w1",
+      "inherited": true,
+      "verification": {
+        "ok": true,
+        "digest": "74c5211225375834bde66fc5b04e84d71f008ed89904180acf1dcfa4645d2acf",
+        "bytes": 470,
+        "etag": "74c5211225375834bde66fc5b04e84d71f008ed89904180acf1dcfa4645d2acf"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "w2",
+          "role": "theme",
+          "matrix": "W",
+          "row": 1,
+          "col": 1
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/w2/E/0/0.png",
+      "localPath": "tiles/w2/E/0/0.png",
+      "digest": "8ba1547d1816a425d94b6afea76190315ee2113e422d86853a6b6cb28134a49e",
+      "physicalEdition": "w2",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "8ba1547d1816a425d94b6afea76190315ee2113e422d86853a6b6cb28134a49e",
+        "bytes": 490,
+        "etag": "8ba1547d1816a425d94b6afea76190315ee2113e422d86853a6b6cb28134a49e"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "w2",
+          "role": "theme",
+          "matrix": "E",
+          "row": 0,
+          "col": 0
+        }
+      ]
+    },
+    {
+      "uri": "/tiles/w2/W/0/2.png",
+      "localPath": "tiles/w2/W/0/2.png",
+      "digest": "e0b92f0a14a7a2ccfaca7713ac6c26a4eae8f546fa2cc346d990a4cf7b4c6bfe",
+      "physicalEdition": "w2",
+      "inherited": false,
+      "verification": {
+        "ok": true,
+        "digest": "e0b92f0a14a7a2ccfaca7713ac6c26a4eae8f546fa2cc346d990a4cf7b4c6bfe",
+        "bytes": 488,
+        "etag": "e0b92f0a14a7a2ccfaca7713ac6c26a4eae8f546fa2cc346d990a4cf7b4c6bfe"
+      },
+      "references": [
+        {
+          "window": "L",
+          "edition": "w2",
+          "role": "theme",
+          "matrix": "W",
+          "row": 0,
+          "col": 2
+        }
+      ]
+    }
+  ],
+  "review": {
+    "deliverable": false,
+    "windows": [
+      {
+        "window": "L",
+        "status": "pendingReview",
+        "reasons": [
+          "缺件 w2 W/1/2（south、east侧边界）",
+          "专题版 w2 仅兼容底图 b2，本版底图为 b1",
+          "换版 w2 的 changeArea [103,0,132,100] 与窗口采集区相交",
+          "换版 b2 的 changeArea [103,0,143,110] 与窗口采集区相交"
+        ]
+      },
+      {
+        "window": "R",
+        "status": "pendingReview",
+        "reasons": [
+          "换版 w2 的 changeArea [103,0,132,100] 与窗口采集区相交",
+          "换版 b2 的 changeArea [103,0,143,110] 与窗口采集区相交"
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "kind": "missing",
+        "window": "L",
+        "cell": {
+          "matrix": "W",
+          "row": 1,
+          "col": 2,
+          "cellArea": [
+            100,
+            0,
+            150,
+            50
+          ],
+          "ownedParts": [
+            [
+              100,
+              2,
+              125,
+              50
+            ]
+          ],
+          "ownedArea": 1200,
+          "sides": [
+            "south",
+            "east"
+          ],
+          "status": "missing",
+          "edition": "w2",
+          "reason": "在版本可取范围内但目录缺件，且无继承/留白声明"
+        }
+      },
+      {
+        "kind": "incompatibleBase",
+        "window": "L",
+        "expected": [
+          "b2"
+        ],
+        "actual": "b1"
+      },
+      {
+        "kind": "changeAreaImpact",
+        "window": "L",
+        "edition": "w2",
+        "area": [
+          103,
+          0,
+          132,
+          100
+        ],
+        "requested": true
+      },
+      {
+        "kind": "changeAreaImpact",
+        "window": "R",
+        "edition": "w2",
+        "area": [
+          103,
+          0,
+          132,
+          100
+        ],
+        "requested": false
+      },
+      {
+        "kind": "changeAreaImpact",
+        "window": "L",
+        "edition": "b2",
+        "area": [
+          103,
+          0,
+          143,
+          110
+        ],
+        "requested": true
+      },
+      {
+        "kind": "changeAreaImpact",
+        "window": "R",
+        "edition": "b2",
+        "area": [
+          103,
+          0,
+          143,
+          110
+        ],
+        "requested": false
+      }
+    ],
+    "reuse": [
+      {
+        "uri": "/tiles/b1/W/0/1.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/0/2.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/1/1.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/1/2.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/E/0/0.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      }
+    ],
+    "mixing": [],
+    "neighborReasons": [
+      {
+        "window": "R",
+        "reason": "编辑未点选该窗，但来源 w2 的换版有效范围覆盖到此窗，需随邻窗一并复领"
+      },
+      {
+        "window": "R",
+        "reason": "编辑未点选该窗，但来源 b2 的换版有效范围覆盖到此窗，需随邻窗一并复领"
+      }
+    ]
+  }
+}

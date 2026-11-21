@@ -1,0 +1,190 @@
+{
+  "outDir": "/workspace/runs/P7-step1",
+  "job": "P-7",
+  "releaseStep": 1,
+  "delivery": {
+    "complete": false,
+    "missingCells": [
+      {
+        "window": "L",
+        "edition": "w2",
+        "matrix": "W",
+        "row": 1,
+        "col": 2,
+        "cellArea": [
+          100,
+          0,
+          150,
+          50
+        ],
+        "sides": [
+          "south",
+          "east"
+        ],
+        "reason": "在版本可取范围内但目录缺件，且无继承/留白声明"
+      }
+    ],
+    "failures": []
+  },
+  "review": {
+    "deliverable": false,
+    "windows": [
+      {
+        "window": "L",
+        "status": "pendingReview",
+        "reasons": [
+          "缺件 w2 W/1/2（south、east侧边界）",
+          "专题版 w2 仅兼容底图 b2，本版底图为 b1",
+          "换版 w2 的 changeArea [103,0,132,100] 与窗口采集区相交",
+          "换版 b2 的 changeArea [103,0,143,110] 与窗口采集区相交"
+        ]
+      },
+      {
+        "window": "R",
+        "status": "pendingReview",
+        "reasons": [
+          "换版 w2 的 changeArea [103,0,132,100] 与窗口采集区相交",
+          "换版 b2 的 changeArea [103,0,143,110] 与窗口采集区相交"
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "kind": "missing",
+        "window": "L",
+        "cell": {
+          "matrix": "W",
+          "row": 1,
+          "col": 2,
+          "cellArea": [
+            100,
+            0,
+            150,
+            50
+          ],
+          "ownedParts": [
+            [
+              100,
+              2,
+              125,
+              50
+            ]
+          ],
+          "ownedArea": 1200,
+          "sides": [
+            "south",
+            "east"
+          ],
+          "status": "missing",
+          "edition": "w2",
+          "reason": "在版本可取范围内但目录缺件，且无继承/留白声明"
+        }
+      },
+      {
+        "kind": "incompatibleBase",
+        "window": "L",
+        "expected": [
+          "b2"
+        ],
+        "actual": "b1"
+      },
+      {
+        "kind": "changeAreaImpact",
+        "window": "L",
+        "edition": "w2",
+        "area": [
+          103,
+          0,
+          132,
+          100
+        ],
+        "requested": true
+      },
+      {
+        "kind": "changeAreaImpact",
+        "window": "R",
+        "edition": "w2",
+        "area": [
+          103,
+          0,
+          132,
+          100
+        ],
+        "requested": false
+      },
+      {
+        "kind": "changeAreaImpact",
+        "window": "L",
+        "edition": "b2",
+        "area": [
+          103,
+          0,
+          143,
+          110
+        ],
+        "requested": true
+      },
+      {
+        "kind": "changeAreaImpact",
+        "window": "R",
+        "edition": "b2",
+        "area": [
+          103,
+          0,
+          143,
+          110
+        ],
+        "requested": false
+      }
+    ],
+    "reuse": [
+      {
+        "uri": "/tiles/b1/W/0/1.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/0/2.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/1/1.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/1/2.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/E/0/0.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      }
+    ],
+    "mixing": [],
+    "neighborReasons": [
+      {
+        "window": "R",
+        "reason": "编辑未点选该窗，但来源 w2 的换版有效范围覆盖到此窗，需随邻窗一并复领"
+      },
+      {
+        "window": "R",
+        "reason": "编辑未点选该窗，但来源 b2 的换版有效范围覆盖到此窗，需随邻窗一并复领"
+      }
+    ]
+  },
+  "downloadFailures": []
+}

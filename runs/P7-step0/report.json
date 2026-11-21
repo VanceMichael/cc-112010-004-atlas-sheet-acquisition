@@ -1,0 +1,59 @@
+{
+  "outDir": "/workspace/runs/P7-step0",
+  "job": "P-7",
+  "releaseStep": 0,
+  "delivery": {
+    "complete": true,
+    "missingCells": [],
+    "failures": []
+  },
+  "review": {
+    "deliverable": true,
+    "windows": [
+      {
+        "window": "L",
+        "status": "ready",
+        "reasons": []
+      },
+      {
+        "window": "R",
+        "status": "ready",
+        "reasons": []
+      }
+    ],
+    "findings": [],
+    "reuse": [
+      {
+        "uri": "/tiles/b1/W/0/1.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/0/2.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/1/1.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      },
+      {
+        "uri": "/tiles/b1/W/1/2.png",
+        "windows": [
+          "L",
+          "R"
+        ]
+      }
+    ],
+    "mixing": [],
+    "neighborReasons": []
+  },
+  "downloadFailures": []
+}

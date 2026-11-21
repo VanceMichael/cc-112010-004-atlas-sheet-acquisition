@@ -1,0 +1,261 @@
+{
+  "transmissions": [
+    {
+      "transmission": "press-cli-1",
+      "payload": {
+        "plate": "T70",
+        "plateVersion": "c1",
+        "transmission": "press-cli-1",
+        "window": "L",
+        "manifest": [
+          {
+            "uri": "/tiles/b1/W/0/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/2.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/2.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/0.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/2.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/0.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/2.png"
+          }
+        ]
+      },
+      "state": "accepted",
+      "note": "服务端 503，回执待核对",
+      "createdAt": "2026-11-21T18:40:52.972Z",
+      "receipt": {
+        "plate": "T70",
+        "plateVersion": "c1",
+        "window": "L",
+        "transmission": "press-cli-1",
+        "manifest": [
+          {
+            "uri": "/tiles/b1/W/0/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/2.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/2.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/0.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/2.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/0.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/2.png"
+          }
+        ],
+        "state": "accepted"
+      }
+    },
+    {
+      "transmission": "press-cli-2",
+      "payload": {
+        "plate": "T71",
+        "plateVersion": "c1",
+        "transmission": "press-cli-2",
+        "window": "L",
+        "manifest": [
+          {
+            "uri": "/tiles/b1/E/0/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/2.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/2.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/0.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/0.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/w2/E/0/0.png"
+          },
+          {
+            "uri": "/tiles/w2/W/0/2.png"
+          }
+        ]
+      },
+      "state": "accepted",
+      "receipt": {
+        "plate": "T71",
+        "plateVersion": "c1",
+        "window": "L",
+        "transmission": "press-cli-2",
+        "manifest": [
+          {
+            "uri": "/tiles/b1/E/0/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/2.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/0.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/2.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/0.png"
+          },
+          {
+            "uri": "/tiles/w1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/0.png"
+          },
+          {
+            "uri": "/tiles/w1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/w2/E/0/0.png"
+          },
+          {
+            "uri": "/tiles/w2/W/0/2.png"
+          }
+        ],
+        "state": "accepted"
+      },
+      "createdAt": "2026-11-21T18:41:52.736Z"
+    },
+    {
+      "transmission": "press-cli-3",
+      "payload": {
+        "plate": "T70",
+        "plateVersion": "c2",
+        "transmission": "press-cli-3",
+        "window": "R",
+        "manifest": [
+          {
+            "uri": "/tiles/b1/E/0/0.png"
+          },
+          {
+            "uri": "/tiles/b1/E/0/1.png"
+          },
+          {
+            "uri": "/tiles/b1/E/1/0.png"
+          },
+          {
+            "uri": "/tiles/b1/E/1/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/0/2.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/b1/W/1/2.png"
+          },
+          {
+            "uri": "/tiles/s1/E/0/0.png"
+          },
+          {
+            "uri": "/tiles/s1/E/0/1.png"
+          },
+          {
+            "uri": "/tiles/s1/E/1/0.png"
+          },
+          {
+            "uri": "/tiles/s1/E/1/1.png"
+          },
+          {
+            "uri": "/tiles/s1/W/0/1.png"
+          },
+          {
+            "uri": "/tiles/s1/W/0/2.png"
+          },
+          {
+            "uri": "/tiles/s1/W/1/1.png"
+          },
+          {
+            "uri": "/tiles/s1/W/1/2.png"
+          }
+        ]
+      },
+      "state": "rejected",
+      "note": "409：印版已锁定或版次已更改",
+      "createdAt": "2026-11-21T18:42:08.207Z"
+    }
+  ]
+}
